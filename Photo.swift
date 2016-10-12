@@ -9,5 +9,7 @@
 import UIKit
 
 class Photo: NSObject {
+    
+    var image: NSData?
 
 }

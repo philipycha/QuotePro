@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QuoteView" customModule="QuotePro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ex0-OG-CLM"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7I-sF-DKd">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEO-h1-RmY">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mEO-h1-RmY" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="9Kj-jb-E02"/>
+                <constraint firstAttribute="trailing" secondItem="ex0-OG-CLM" secondAttribute="trailing" id="QXz-kR-hih"/>
+                <constraint firstAttribute="bottom" secondItem="ex0-OG-CLM" secondAttribute="bottom" id="Rkl-1a-cXE"/>
+                <constraint firstItem="A7I-sF-DKd" firstAttribute="top" secondItem="mEO-h1-RmY" secondAttribute="bottom" constant="98" id="aTx-sP-udM"/>
+                <constraint firstItem="ex0-OG-CLM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lcT-cI-J2v"/>
+                <constraint firstItem="A7I-sF-DKd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mY6-eE-8AT"/>
+                <constraint firstItem="ex0-OG-CLM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wCE-zo-lwu"/>
+                <constraint firstItem="mEO-h1-RmY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xja-9u-2ir"/>
+            </constraints>
+            <connections>
+                <outlet property="authorLabel" destination="A7I-sF-DKd" id="6cC-II-JVl"/>
+                <outlet property="photoView" destination="ex0-OG-CLM" id="Lwo-eX-a9g"/>
+                <outlet property="quoteLabel" destination="mEO-h1-RmY" id="PVw-7f-74T"/>
+            </connections>
+        </view>
+    </objects>
+</document>
