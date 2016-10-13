@@ -63,7 +63,7 @@
                     <navigationItem key="navigationItem" id="YGQ-Pz-Bad">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="pvJ-fe-s8C">
                             <connections>
-                                <segue destination="Rti-rL-4gQ" kind="presentation" id="ryD-kh-iES"/>
+                                <segue destination="Rti-rL-4gQ" kind="show" identifier="toQuoteVC" id="ryD-kh-iES"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -86,8 +86,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JjL-GA-Ukn">
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jix-Yx-69C">
-                                        <frame key="frameInset" minX="133" minY="530" width="56" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jix-Yx-69C">
                                         <state key="normal" title="Image +"/>
                                         <connections>
                                             <action selector="randomImage:" destination="Rti-rL-4gQ" eventType="touchUpInside" id="xr4-3C-bYI"/>
@@ -133,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M1z-eu-8xy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1720.8" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1914" y="138"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Jp4-Zr-jyg">

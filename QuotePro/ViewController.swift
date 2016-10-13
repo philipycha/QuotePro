@@ -8,13 +8,21 @@
 
 import UIKit
 
+protocol NewQuoteItem {
+    
+    func saveQuoteItem(quoteImageElement: Quote)
+}
+
 class ViewController: UIViewController {
+    
+    var delegate: NewQuoteItem? = nil
     
     var quoteView:QuoteView!
     var quoteObject: Quote!
     var image: UIImage!
     var randomQuote:String!
     var author:String!
+    var tableViewCell:TableViewCell!
 
     @IBOutlet weak var quoteButton: UIButton!
     @IBOutlet weak var imageButton: UIButton!
@@ -105,10 +113,19 @@ class ViewController: UIViewController {
 
 
     
-//    @IBAction func saveImage(_ sender: UIButton) {
-//        
-//        
-//    }
+    @IBAction func saveImage(_ sender: UIButton) {
+        
+        let savedItem = Quote(quote: randomQuote, author: author, image: image)
+        self.delegate?.saveQuoteItem(quoteImageElement: savedItem)
+        
+        navigationController?.popViewController(animated: true)
+        
+//        tableViewCell.cellImageView.image = image
+//        tableViewCell.cellAuthorLabel.text = author
+//        tableViewCell.cellQuoteLabel.text = quote
+
+        
+    }
 
     
 
