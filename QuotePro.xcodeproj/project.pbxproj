@@ -8,31 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		1548557A1DAEB305003807DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154855791DAEB305003807DF /* AppDelegate.swift */; };
-		1548557C1DAEB305003807DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1548557B1DAEB305003807DF /* ViewController.swift */; };
 		1548557F1DAEB305003807DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1548557D1DAEB305003807DF /* Main.storyboard */; };
 		154855811DAEB305003807DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 154855801DAEB305003807DF /* Assets.xcassets */; };
 		154855841DAEB305003807DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 154855821DAEB305003807DF /* LaunchScreen.storyboard */; };
 		1548558C1DAEB33B003807DF /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1548558B1DAEB33B003807DF /* Quote.swift */; };
-		1548558E1DAEB348003807DF /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1548558D1DAEB348003807DF /* Photo.swift */; };
 		15672C3E1DAEBDDE0025F9DF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15672C3D1DAEBDDE0025F9DF /* TableViewController.swift */; };
 		15672C461DAEC0060025F9DF /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15672C451DAEC0060025F9DF /* QuoteView.swift */; };
 		15672C481DAEC0260025F9DF /* QuoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15672C471DAEC0260025F9DF /* QuoteView.xib */; };
+		15672C4A1DAEC34C0025F9DF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15672C491DAEC34C0025F9DF /* TableViewCell.swift */; };
+		15672C4E1DAEDD790025F9DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15672C4D1DAEDD790025F9DF /* ViewController.swift */; };
 		BD8A8BE45D2AED5367193F61 /* Pods_QuotePro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F396DEFD84D4F2772A13BC /* Pods_QuotePro.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		154855761DAEB305003807DF /* QuotePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuotePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		154855791DAEB305003807DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1548557B1DAEB305003807DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1548557E1DAEB305003807DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		154855801DAEB305003807DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		154855831DAEB305003807DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		154855851DAEB305003807DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1548558B1DAEB33B003807DF /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Quote.swift; path = ../Quote.swift; sourceTree = "<group>"; };
-		1548558D1DAEB348003807DF /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Photo.swift; path = ../Photo.swift; sourceTree = "<group>"; };
 		15672C3D1DAEBDDE0025F9DF /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		15672C451DAEC0060025F9DF /* QuoteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
 		15672C471DAEC0260025F9DF /* QuoteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuoteView.xib; sourceTree = "<group>"; };
+		15672C491DAEC34C0025F9DF /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		15672C4D1DAEDD790025F9DF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		31353A712EC5CDFF0C424EE0 /* Pods-QuotePro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuotePro.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuotePro/Pods-QuotePro.release.xcconfig"; sourceTree = "<group>"; };
 		A67E065C028682F08C3BCC6D /* Pods-QuotePro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuotePro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuotePro/Pods-QuotePro.debug.xcconfig"; sourceTree = "<group>"; };
 		A6F396DEFD84D4F2772A13BC /* Pods_QuotePro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuotePro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,9 +81,9 @@
 			isa = PBXGroup;
 			children = (
 				154855791DAEB305003807DF /* AppDelegate.swift */,
-				1548557B1DAEB305003807DF /* ViewController.swift */,
-				1548558D1DAEB348003807DF /* Photo.swift */,
 				15672C3D1DAEBDDE0025F9DF /* TableViewController.swift */,
+				15672C4D1DAEDD790025F9DF /* ViewController.swift */,
+				15672C491DAEC34C0025F9DF /* TableViewCell.swift */,
 				1548558B1DAEB33B003807DF /* Quote.swift */,
 				15672C451DAEC0060025F9DF /* QuoteView.swift */,
 				15672C471DAEC0260025F9DF /* QuoteView.xib */,
@@ -228,11 +228,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1548558E1DAEB348003807DF /* Photo.swift in Sources */,
 				15672C3E1DAEBDDE0025F9DF /* TableViewController.swift in Sources */,
-				1548557C1DAEB305003807DF /* ViewController.swift in Sources */,
 				15672C461DAEC0060025F9DF /* QuoteView.swift in Sources */,
 				1548558C1DAEB33B003807DF /* Quote.swift in Sources */,
+				15672C4A1DAEC34C0025F9DF /* TableViewCell.swift in Sources */,
+				15672C4E1DAEDD790025F9DF /* ViewController.swift in Sources */,
 				1548557A1DAEB305003807DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

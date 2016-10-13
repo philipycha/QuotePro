@@ -8,10 +8,16 @@
 
 import UIKit
 
-class Quote: NSObject {
+class Quote {
     
-    var quoteText: String?
-    var quoteAuthor: String?
-    var quotePhoto: Photo?
-
+    var quote: String
+    var author: String
+    var image: UIImage
+    init(quote:String, author:String, image:UIImage) {
+        self.quote = quote
+        self.author = author
+        self.image = image
+        
+    }
+    
 }

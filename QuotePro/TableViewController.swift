@@ -7,44 +7,52 @@
 //
 
 import UIKit
+import Nuke
+
 
 class TableViewController: UITableViewController {
+    
+     var quotesLibrary:[Quote]=[]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+ 
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+     
+        return self.quotesLibrary.count
     }
 
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        let url = NSURL(string: "http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json")
-        Nuke.loadImage(with: url, into: cell.imageView)
-
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> TableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
+        
+        let url = URL(string: "https://unsplash.it/200/300/?random")!
+        
+        Nuke.loadImage(with: url, into: cell.cellImageView!)
+        
+        let quote = quotesLibrary[indexPath.row]
+        
+        cell.cellAuthorLabel.text = quote.author
+        cell.cellQuoteLabel.text = quote.quote
+        cell.cellImageView = UIImageView (image: quote.image)
+        
         return cell
+        
     }
+    
 
 }
