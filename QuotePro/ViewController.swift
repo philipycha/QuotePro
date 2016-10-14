@@ -118,7 +118,10 @@ class ViewController: UIViewController {
         let savedItem = Quote(quote: randomQuote, author: author, image: image)
         self.delegate?.saveQuoteItem(quoteImageElement: savedItem)
         
+        
+        
         navigationController?.popViewController(animated: true)
+        
         
 //        tableViewCell.cellImageView.image = image
 //        tableViewCell.cellAuthorLabel.text = author
@@ -126,6 +129,14 @@ class ViewController: UIViewController {
 
         
     }
+    
+//    func snapshot(view: UIView) -> UIImage {
+//        let renderer = UIGraphicsImageRenderer(size: view.bounds.size)
+//        let image = renderer.image { ctx in
+//            view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
+//        }
+//        return image
+//    }
 
     
 

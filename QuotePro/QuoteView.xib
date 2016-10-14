@@ -13,13 +13,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ex0-OG-CLM"/>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7I-sF-DKd">
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEO-h1-RmY">
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEO-h1-RmY">
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7I-sF-DKd">
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -30,10 +30,10 @@
                 <constraint firstAttribute="trailing" secondItem="ex0-OG-CLM" secondAttribute="trailing" id="QXz-kR-hih"/>
                 <constraint firstItem="mEO-h1-RmY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Qbi-KX-96r"/>
                 <constraint firstAttribute="bottom" secondItem="ex0-OG-CLM" secondAttribute="bottom" id="Rkl-1a-cXE"/>
-                <constraint firstItem="A7I-sF-DKd" firstAttribute="top" secondItem="mEO-h1-RmY" secondAttribute="bottom" constant="98" id="aTx-sP-udM"/>
+                <constraint firstItem="A7I-sF-DKd" firstAttribute="top" secondItem="mEO-h1-RmY" secondAttribute="bottom" constant="83" id="aTx-sP-udM"/>
                 <constraint firstItem="ex0-OG-CLM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lcT-cI-J2v"/>
                 <constraint firstItem="A7I-sF-DKd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mY6-eE-8AT"/>
-                <constraint firstItem="mEO-h1-RmY" firstAttribute="top" secondItem="ex0-OG-CLM" secondAttribute="bottom" constant="-345" id="myd-35-TfG"/>
+                <constraint firstItem="mEO-h1-RmY" firstAttribute="top" secondItem="ex0-OG-CLM" secondAttribute="bottom" constant="-451" id="myd-35-TfG"/>
                 <constraint firstItem="ex0-OG-CLM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wCE-zo-lwu"/>
             </constraints>
             <connections>

@@ -70,5 +70,47 @@ class TableViewController: UITableViewController, NewQuoteItem {
         }
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let quote = quotesLibrary[indexPath.row]
+        
+        let qView = Bundle.main.loadNibNamed("QuoteView", owner: self, options: nil)?[0] as! QuoteView
+        let frame = CGRect(x: -view.frame.width, y: 0, width: view.frame.width, height: view.frame.height)
+        qView.frame = frame
+        view.addSubview(qView)
+        qView.authorLabel.text = quote.author
+        qView.quoteLabel.text = quote.quote
+        qView.photoView.image = quote.image
+        
+        let image = takeImage(view: qView)
+        
+        
+        if let image = image {
+            let vc = UIActivityViewController(activityItems: [image], applicationActivities: [])
+            present(vc, animated: true)
+        }else{
+            //do something
+        }
+        
+        qView.removeFromSuperview()
+        
+    }
+    
+    func takeImage(view imageView:UIView) -> (UIImage?) {
+        
+        UIGraphicsBeginImageContext(imageView.frame.size)
+        let context = UIGraphicsGetCurrentContext()
+        
+        if let context = context {
+            imageView.layer.render(in: context)
+        }
+        
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        
+        return image
+    }
+    
+    
+    
 
 }
